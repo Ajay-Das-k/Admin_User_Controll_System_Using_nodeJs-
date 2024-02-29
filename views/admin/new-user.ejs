@@ -1,0 +1,105 @@
+<%- include("../layouts/header.ejs") %>
+
+
+<!-- Sidebar Start -->
+<div class="sidebar pe-4 pb-3">
+  <nav class="navbar bg-secondary navbar-dark">
+      <a href="#" class="navbar-brand mx-4 mb-3">
+          <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>TechHub</h3>
+      </a>
+      <div class="d-flex align-items-center ms-4 mb-4">
+        
+          
+      </div>
+      <div class="navbar-nav w-100">
+          
+          <a href="/admin/home" class="nav-item nav-link "><i class="fa fa-laptop me-2"></i>home</a>
+          <a href="/admin/dashboard" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+          <a href="#" class="nav-item nav-link active"><i class="fa fa-user-plus me-2"></i>new User</a>
+          
+          </div>
+      </div>
+  </nav>
+</div>
+<!-- Sidebar End -->
+
+
+<!-- Content Start -->
+<div class="content h-50">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-3 ">
+      <a href="/" class="navbar-brand d-flex d-lg-none me-4">
+          <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+      </a>
+      <a href="#" class="sidebar-toggler flex-shrink-0">
+          <i class="fa fa-bars"></i>
+      </a>
+      
+      
+  </nav>
+<div class="container-fluid pt-4 px-4">
+  <div class="row vh-100 bg-secondary rounded align-items-center justify-content-center mx-0">
+     
+      <h6 class="mb-4">Add new user </h6>
+                      <form action="" method="post" enctype="multipart/form-data">
+
+            
+
+                          <div class="mb-3">
+                              <label  class="form-label">User Name</label>
+                              <input type="text" class="form-control "name="name"  value="name">
+                          </div>
+
+                          <div class="mb-3">
+                              <label  class="form-label">Phone</label>
+                              <input type="tel" class="form-control" name="mno"  value="mobile">
+                          </div>
+
+                          <div class="mb-3">
+                              <label  class="form-label">Email address</label>
+                              <input type="email" class="form-control" name="email"  value="email">
+                          </div>
+
+                          <div class="mb-3">
+                              <label  class="form-label">Photo input</label>
+                              <input class="form-control bg-dark" type="file" id="image" name="image" >
+                          </div>
+
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" name="password" >
+                          </div>
+                          
+                          <button type="submit" class="btn btn-primary">Add Profile</button>
+                      </form>
+  </div>
+</div>
+<!-- Blank End -->
+
+  
+
+
+
+<!-- Footer Start -->
+  <div class="container-fluid pt-4 px-4">
+      <div class="bg-secondary rounded-top p-4">
+          <div class="row">
+              <div class="col-12 col-sm-6 text-center text-sm-start">
+                  &copy; <a href="#">Aj Tech Hub</a>, All Right Reserved. 
+              </div>
+              <div class="col-12 col-sm-6 text-center text-sm-end">
+                  <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                  Designed By <a href="https://aju-0.github.io/Ajay_das_K_Official_website/index.html">Ajay</a>
+                  <br>Distributed By: <a href="https://aju-0.github.io/Ajay_das_K_Official_website/index.html" target="_blank">Aj tech hub</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer End -->
+</div>
+<!-- Content End -->
+
+
+<!-- Back to Top -->
+
+<%- include("../layouts/footer.ejs") %>

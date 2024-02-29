@@ -1,0 +1,75 @@
+<%- include ('../layouts/header.ejs')%>
+    <!-- Sign Up Start -->
+    <div class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                <div class="bg-secondary rounded p-4 p-sm-5 my-4 mx-3">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <a href="index.html">
+                            <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>TechHub</h3>
+                        </a>
+                        <h3>Sign Up</h3>
+                    </div>
+
+                    <form action="" method="post" enctype="multipart/form-data">
+
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingText" placeholder="Name please" required name="name">
+                            <label for="floatingText">Username</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required name="email">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="floatingInput" placeholder="123-456-7890" required name="mno">
+                            <label for="floatingInput">Phone Number</label>
+                        </div>
+
+                        <div class="form-floating mb-4">
+                            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+                            <div class="image-upload-wrap">
+                              <input class="file-upload-input" name="image" type='file' onchange="readURL(this);" accept="image/*" />
+                              <div class="drag-text">
+                                <h3>Drag and drop a file or select add Image</h3>
+                              </div>
+                            </div>
+
+
+                            <div class="file-upload-content">
+                              <img class="file-upload-image" src="#" alt="your image" />
+                              <div class="image-title-wrap">
+                                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+                              </div>
+                              </div>
+                        </div>
+
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
+                            <label for="floatingPassword">Password</label>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between mb-4 ">
+                            <% if (typeof message !== 'undefined') { %>
+                                <p class="text-center text-success"><%= message %><a href="https://mail.google.com/mail/">Email !</a><br><br></p>
+                                <p class="text-center"></p>
+                            <% } %>
+                       </div>
+
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <a href="/forget">Forgot Password</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Sign Up</button>
+                    </form>
+                    <p class="text-center mb-0">Already have an Account? <a href="/login">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sign Up End -->
+</div>
+<%- include ('../layouts/footer.ejs')%>
